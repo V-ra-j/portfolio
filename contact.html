@@ -1,0 +1,66 @@
+<html>
+  <head>
+	<link href="style.css" type="text/css" rel="stylesheet">
+	<style>
+		table
+		{
+			border:0px solid black;
+			position:absolute;
+		}
+		table td
+		{
+			border:0px solid black;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+	<script src="javascript.js" type="text/javascript" lang="javascript"></script>
+  </head> 
+  <body onload="animate()">
+	<div id="transition1">
+		</div>
+		<div id="transition2">
+		</div>
+		<div id="transition3">
+		</div>
+  <div id="transition" style="width:0%;height:100%;position:absolute;background-color:blue;z-index:1;" ></div>
+	<div class="main">
+	  <div class="head">
+		<div class="leftdiv">
+		<ul>
+		<a style="color:black;" href="#vraj"><li><h2>VRAJ.DEV</h2></li></a>
+		</ul>
+		</div>
+		<div class="rightdiv">
+			<ul>
+				<a href="index.html"><li >HOME</li></a>
+				<a href="skills.html"><li>SKILLS</li></a>
+				<a href=""><li class="project">PROJECTS </a><div class="types">
+																		<div><a href="#">Programming Languages</a></div>
+																		<div style="margin-bottom:0px;"><a href="#">Web Development</a></div>
+																	</div></li>
+				<a class="btnjs" href="contact.html"><li style="border-bottom:5px solid yellow;">CONTACT</li></a>
+			</ul>
+		</div>
+	  </div>
+	  <div class="content1">
+		<h2 class="title">CONTACT ME</h2>
+	    <div class="contact">
+			<table>
+				<form name="frm" action="#" method="post">
+					<tr><td><input style="height: 44px;border:2px solid black;" type="text" class="form" id="" name="fname" placeholder="Name" onblur="checkblank(this,blnk)"></td>
+						<td><label id="blnk"></label></td></tr>
+					<tr><td><input style="height: 44px;border:2px solid black;" type="text" class="form" id="" name="lname" placeholder="Email" onblur="checkblank(this,blnk1)"></td>
+					<td><label id="blnk1"></label></td></tr>
+					<tr><td><input style="height: 44px;border:2px solid black;" type="text" class="form" id="" name="sub" placeholder="Subject" onblur="checkblank(this,blnk2)"></td>
+					<td><label id="blnk2"></label></td></tr>
+					<tr><td><textarea style="border:2px solid black;" class="form" rows="10" cols="50" placeholder="Message" onblur="checkblank(this,blnk3)"></textarea></td>
+					<td><label id="blnk3"></label></td></tr>
+					<tr><td colspan="2"><input class="btn" type="submit"></td></tr>
+				</form>
+			</table>
+		</div>
+	  </div>
+	</div>
+	
+  </body>
+</html> 
